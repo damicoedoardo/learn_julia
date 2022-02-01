@@ -47,4 +47,22 @@ map(fib2, [1, 2, 3, 4, 5, 6, 7, 8])
 #Tuples
 x = (1,)
 tup = ("Hello", 1, 'w')
+#Named Tuples
 ntup = (a = "Hello", b = 1)
+
+a, b... = "hello"
+b
+
+#Composing Functions
+sqrt(+(3, 6))
+(sqrt ∘ +)(3, 6)
+
+#Piping
+1:10 |> sum |> sqrt
+# Piping can be used with the broadcasting operator
+["a", "list", "of", "strings"] .|> [uppercase, reverse, titlecase, length]
+
+Y = [1.0, 2.0, 3.0, 4.0];
+X = similar(Y);
+@. X = sin(cos(Y))
+X
